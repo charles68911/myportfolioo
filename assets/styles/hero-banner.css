@@ -1,0 +1,77 @@
+#hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 300px;
+  background-image: url(../images/Charles-Background.png);
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+}
+
+.hero-content {
+    align-content: center;
+}
+
+.hero-content h1 {
+  font-size: 58px;
+}
+
+.hero-content p {
+  font-size: 26px;
+  margin: 18px 0;
+}
+
+@media only screen and (max-width: 1023.9px) {
+  #hero-banner {
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-banner {
+    padding: 160px 32px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #hero-banner {
+    padding: 120px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #hero-banner {
+    padding: 320px 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 64px;
+  }
+
+  .hero-content p {
+    font-size: 30px;
+  }
+}
